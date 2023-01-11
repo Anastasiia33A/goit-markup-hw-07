@@ -745,8 +745,6 @@ width: 408px;
 @media screen and (min-width: 1200px) {
     .container {
         width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -1460,7 +1458,9 @@ text-transform: capitalize;
 }
      /*  Desktop*/
 @media screen and (min-width: 1200px) {
-
+.container {
+    padding: 0;
+}
     .main-nav {
     display: flex;
     align-items: center;
@@ -1535,7 +1535,6 @@ text-transform: capitalize;
 }
 .section-team .list {
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
 }

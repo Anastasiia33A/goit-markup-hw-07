@@ -173,10 +173,17 @@ color: var(--dark-color);
     margin-right: 40px;
 }
 .mobile-menu-open {
+    position: absolute;
+    top: 40%;
+    right: 17px;
+    transform: translate(-40%);
     background-color: transparent;
     border: none;
     padding: 0;
     height: 22px;
+}
+.mobile-contacts {
+    margin-top: auto;
 }
  
 .button { 
@@ -232,6 +239,7 @@ padding-bottom: 120px;
   } 
 .list{
     list-style: none;
+    text-decoration: none;
 }
 .list-section {
  border: 1px solid #E7E9FC;
@@ -502,7 +510,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     fill: #FFFFFF;
 }
 .form{
-width: 408px;
+width: 100%;
 }
 .form-title {
  margin-top: 72px;
@@ -724,10 +732,19 @@ width: 408px;
     margin-bottom: -5px;
     margin-left: 16px;
  }  
+ .customers-list {
+     display: flex;
+     flex-wrap: wrap;
+     row-gap: 72px;
+     column-gap: 16px;
+     border-radius: 4px;
+     justify-content: center;
+     align-items: center;
+ }
 /* Mobile */
 @media screen and (min-width: 480px) {
     .container {
-        width: 428px;
+        /* width: 428px; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -756,13 +773,14 @@ width: 408px;
         display: none;
     }
 .main-nav {
+    position: relative;
 padding-top: 24px;
 padding-bottom: 24px;
 display: flex;
 justify-content: space-between;
         }
 .hero {
-max-width: 428px;
+/* max-width: 428px; */
 max-height: 432px;
 padding-top: 112px;
 padding-bottom: 112px;
@@ -863,7 +881,7 @@ border-radius: 4px;
     /* flex-direction: column; */
     /* align-items: center; */
     width: 264px;
-    height: 436px;
+    /* height: 436px; */
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 72px;
@@ -885,15 +903,7 @@ border-radius: 4px;
 
 }
 
-.customers-list{
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 16px;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-}
+
 .customers-item{ 
     width: 190px;
     height: 88px;}
@@ -912,7 +922,7 @@ width: 104px;
 height: 56px;
 fill: currentColor;}
 .fon-footer{
-    min-width: 428px;
+    /* max-width: 428px; */
     min-height: 662px;
     background-color: var(--dark-color);
     padding-top: 96px;
@@ -964,15 +974,11 @@ fill: currentColor;}
     justify-content: center;
     align-items: center;
 }
-.form {
-    width: 100%;
-    max-width: 396px;
-}
 .subscribe-label{display: flex;
     width: 75px;
     height: 24px;
     margin-bottom: 16px;
-    margin-left: 156px;
+    margin-left: 70px;
 
     font-weight: 500;
     font-size: 16px;
@@ -982,7 +988,6 @@ fill: currentColor;}
 }
 .subscribe-input{
     width: 100%;
-    width: 396px;
     max-height: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -1016,6 +1021,7 @@ fill: currentColor;}
     border: var(--primary-brand-color);
     cursor: pointer;}
 
+
 .mobile-menu {
 position: fixed;
 top: 0;
@@ -1041,6 +1047,7 @@ transform: translateX(100%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
 }
 .menu-close-btn:hover,
 .menu-close-btn:focus {
@@ -1097,8 +1104,11 @@ transform: translateX(100%);
     display: flex;
     row-gap: 40px;
     flex-wrap: wrap;
+    margin-bottom: 48px;
 }
-
+.social-list-item{
+    margin-right:56px;
+}
 .mobile-menu .contact-link {
     margin-bottom: 40px;
     font-weight: 500;
@@ -1185,7 +1195,7 @@ transform: translateX(100%);
 display: block;
 text-align: center;
 
- max-width: 768px;
+ /* max-width: 768px; */
  max-height: 436px;
  padding-top: 112px;
  padding-bottom: 112px;
@@ -1254,6 +1264,11 @@ text-transform: capitalize;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
+}
+.section-customers {
+    display: flex;
+        padding-top: 120px;
+        padding-bottom: 120px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1327,6 +1342,11 @@ text-transform: capitalize;
 
 .list-section:nth-child(4n) {
     margin-right: 0px;
+}
+.section-customers {
+    display: flex;
+        padding-top: 96px;
+        padding-bottom: 96px;
 }
 
 .customers-list {
@@ -1475,6 +1495,9 @@ text-transform: capitalize;
 } 
 .address-link .list:not(:last-child) {
     margin-right: 40px;}
+.form-field .form-label {
+            display: flex;
+            flex-direction: column;}
 
 .section-features {
     padding-top: 120px;
@@ -1605,6 +1628,7 @@ text-transform: capitalize;
  }
  .text-footer{
     display: block;
+    width: 264px;
     color: var(--accent-color);
     margin-top: 16px;
     line-height: 1.5;

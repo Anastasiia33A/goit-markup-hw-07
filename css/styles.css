@@ -893,6 +893,7 @@ img {
 
     .hero-title {
         margin: 0 auto 48px auto;
+        width: 318px;
 
         color: #FFFFFF;
         font-weight: 700;
@@ -1123,7 +1124,7 @@ img {
     }
 
     .subscribe-input {
-        width: 100%;
+        width: 396px;
         max-height: 40px;
         padding-top: 8px;
         padding-bottom: 8px;
@@ -1247,7 +1248,10 @@ img {
         display: flex;
         row-gap: 40px;
         flex-wrap: wrap;
+        justify-content: flex-start;
         margin-bottom: 48px;
+    }
+    .svg-mobile {fill: #F4F4FD;
     }
 
     .social-list-item {
@@ -1333,7 +1337,7 @@ img {
 
         color: var(--text-color);
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.5;
 
         transition: color 250 ms var(--timing-function);
@@ -1576,6 +1580,7 @@ img {
         row-gap: 72px;
         flex-wrap: wrap;
         align-items: flex-start;
+        width: 728px;
     }
 
     .text-footer {

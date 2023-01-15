@@ -99,28 +99,28 @@
             <ul class="list-social list">
               <li class="social-list-item">
                 <a class="link-social" href="#">
-                  <svg width="16" height="16">
+                  <svg class="svg-mobile" width="16" height="16">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list-item">
                 <a class="link-social" href="#">
-                  <svg width="16" height="16">
+                  <svg class="svg-mobile" width="16" height="16">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list-item">
                 <a class="link-social" href="#">
-                  <svg width="16" height="16">
+                  <svg class="svg-mobile" width="16" height="16">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-list-item">
                 <a class="link-social" href="#">
-                  <svg width="16" height="16">
+                  <svg class="svg-mobile" width="16" height="16">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -277,28 +277,39 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="list">
             <li class="list-section">
-              <img
-                class="img"
-                src="./images/computer.jpg"
-                alt="Web site for computers"
-                width="360"
-              />
+              <picture>
+                <source
+                  srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x"
+                />
+                <img
+                  class="img"
+                  src="./images/computer.jpg"
+                  alt="Web site for computers"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="list-section">
+              <picture>
+                <source srcset="./images/phone-screens.jpg 1x, ./images/phone-screens@2x.jpg 2x"/>
               <img
                 class="img"
                 src="./images/phone-screens.jpg"
                 alt="Many phone screens"
                 width="360"
               />
+              </picture>
             </li>
             <li class="list-section">
+              <picture>
+                <source srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"/>
               <img
                 class="img"
                 src="./images/phone.jpg"
                 alt="Phone"
                 width="360"
               />
+              </picture>
             </li>
           </ul>
         </div>
@@ -308,13 +319,15 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="list team">
             <li class="list-section">
+              <picture>
+                <source srcset="./images/img-mark.jpg 1x, ./images/img-mark@2x.jpg 2x"/>
               <img
                 class="img"
                 src="./images/img-mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
-              />
+              /></picture>
               <div class="works-team">
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
@@ -351,6 +364,8 @@
               </div>
             </li>
             <li class="list-section">
+              <picture>
+                <source srcset="./images/img-tom.jpg 1x, ./images/img-tom@2x.jpg 2x"/>
               <img
                 class="img"
                 src="./images/img-tom.jpg"
@@ -394,6 +409,8 @@
               </div>
             </li>
             <li class="list-section">
+              <picture>
+                <source srcset="./images/img-camila.jpg 1x, ./images/img-camila@2x.jpg 2x"/>
               <img
                 class="img"
                 src="./images/img-camila.jpg"
@@ -437,6 +454,8 @@
               </div>
             </li>
             <li class="list-section">
+              <picture>
+                <source srcset="./images/img-daniel.jpg 1x, ./images/img-daniel@2x.jpg 2x"/>
               <img
                 class="img"
                 src="./images/img-daniel.jpg"
